@@ -13,11 +13,11 @@ int main(void)
 {
     int x = TWO;
 
-    PX;
+    PX;    // x is 2.
     x = FOUR;
-    printf(FMT, x);
-    printf("%s\n", OW);
-    printf("TWO: OW\n");
+    printf(FMT, x);         // x is 4.
+    printf("%s\n", OW);     // Consistensy is the last refuge of the unimaginative. - Oscar Wilde
+    printf("TWO: OW\n");    // TWO: OW
 
     return 0;
 }
