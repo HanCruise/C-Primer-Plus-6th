@@ -22,10 +22,10 @@ char * s_gets(char * st, int n)
     char * ret_val;
     char * find;
 
-    ret_val = fgets(st, n, stdin);
-    if (ret_val)
+    ret_val = fgets(st, n, stdin);    // 查找换行符
+    if (ret_val)                      // 如果地址不是NULL,
     {
-        find = strchr(st, '\n');
+        find = strchr(st, '\n');      // 在此处放置一个空字符
         if (find)
         {
             *find = '\0';
@@ -33,7 +33,7 @@ char * s_gets(char * st, int n)
         else
         {
             while ('\n' != getchar())
-                continue;
+                continue;             // 处理输入行中的剩余字符
         }
     }
 
